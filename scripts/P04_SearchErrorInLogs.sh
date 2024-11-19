@@ -16,6 +16,6 @@ SEARCH_PATTERN="ERROR"      # Pattern to search for
 echo "Fetching log details for pattern: $SEARCH_PATTERN"
 if [[ -f "$LOG_FILE" ]]; then
     grep "$SEARCH_PATTERN" "$LOG_FILE"
-else
+   else
     echo "Log file not found: $LOG_FILE"
 fi
